@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="ballGrad" x1="20%" y1="20%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="60%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#9f1239" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Base App Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Outer accent rim -->
+  <rect x="8" y="8" width="496" height="496" rx="104" fill="none" stroke="url(#glowGrad)" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Cricket Stadium Floodlight Beam Effect -->
+  <path d="M64 48 L256 256 L448 48 Z" fill="url(#glowGrad)" opacity="0.04" />
+
+  <!-- Cricket Wickets / Stumps behind ball -->
+  <g opacity="0.85" filter="url(#dropShadow)">
+    <!-- Bails -->
+    <rect x="175" y="115" width="75" height="12" rx="4" fill="url(#goldGrad)" />
+    <rect x="262" y="115" width="75" height="12" rx="4" fill="url(#goldGrad)" />
+    
+    <!-- 3 Stumps -->
+    <rect x="190" y="125" width="16" height="230" rx="6" fill="#f8fafc" />
+    <rect x="248" y="125" width="16" height="230" rx="6" fill="#f8fafc" />
+    <rect x="306" y="125" width="16" height="230" rx="6" fill="#f8fafc" />
+  </g>
+
+  <!-- Cricket Ball -->
+  <g filter="url(#dropShadow)">
+    <circle cx="256" cy="275" r="105" fill="url(#ballGrad)" stroke="#fda4af" stroke-width="2" />
+    
+    <!-- Cricket Ball Seam -->
+    <path d="M190 200 C 235 240, 240 310, 280 348" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="4,4" opacity="0.9" />
+    <path d="M193 203 C 238 243, 243 313, 283 351" fill="none" stroke="#fecdd3" stroke-width="2" opacity="0.75" />
+    <path d="M187 197 C 232 237, 237 307, 277 345" fill="none" stroke="#fecdd3" stroke-width="2" opacity="0.75" />
+
+    <!-- Ball Highlight -->
+    <ellipse cx="225" cy="230" rx="30" ry="16" transform="rotate(-30 225 230)" fill="#ffffff" opacity="0.3" />
+  </g>
+
+  <!-- CricLive Brand Text Ribbon -->
+  <rect x="116" y="388" width="280" height="52" rx="26" fill="#0f172a" stroke="url(#glowGrad)" stroke-width="2" filter="url(#dropShadow)" />
+  <circle cx="145" cy="414" r="7" fill="#10b981">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <text x="165" y="423" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" letter-spacing="2">CRICLIVE</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="mBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="mGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="mBallGrad" x1="20%" y1="20%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="60%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#9f1239" />
+    </linearGradient>
+    <linearGradient id="mGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background extending to all edges for Android adaptive mask -->
+  <rect width="512" height="512" fill="url(#mBgGrad)" />
+  
+  <!-- Subtle circular arena pattern within safe area -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#mGlowGrad)" stroke-width="2" opacity="0.3" />
+
+  <!-- Cricket Wickets / Stumps (Scaled inside safe zone 80%) -->
+  <g opacity="0.85">
+    <rect x="185" y="140" width="65" height="10" rx="3" fill="url(#mGoldGrad)" />
+    <rect x="262" y="140" width="65" height="10" rx="3" fill="url(#mGoldGrad)" />
+    
+    <rect x="198" y="148" width="14" height="185" rx="5" fill="#f8fafc" />
+    <rect x="249" y="148" width="14" height="185" rx="5" fill="#f8fafc" />
+    <rect x="300" y="148" width="14" height="185" rx="5" fill="#f8fafc" />
+  </g>
+
+  <!-- Cricket Ball inside safe zone -->
+  <circle cx="256" cy="265" r="86" fill="url(#mBallGrad)" stroke="#fda4af" stroke-width="2" />
+  
+  <!-- Ball Seam -->
+  <path d="M202 205 C 238 238, 242 292, 275 325" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-dasharray="3.5,3.5" opacity="0.9" />
+  <ellipse cx="230" cy="228" rx="24" ry="12" transform="rotate(-30 230 228)" fill="#ffffff" opacity="0.3" />
+
+  <!-- CricLive text inside safe zone -->
+  <rect x="146" y="358" width="220" height="42" rx="21" fill="#0f172a" stroke="url(#mGlowGrad)" stroke-width="2" />
+  <circle cx="170" cy="379" r="5" fill="#10b981" />
+  <text x="186" y="386" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="900" letter-spacing="1.5">CRICLIVE</text>
+</svg>

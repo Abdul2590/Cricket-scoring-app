@@ -1,0 +1,6 @@
+{
+  "name": "CricLive Scoring",
+  "description": "Installable Android cricket scoring app with match fixtures management, ball-by-ball scoring console, customizable dashboard, offline service worker, and Google Drive cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
