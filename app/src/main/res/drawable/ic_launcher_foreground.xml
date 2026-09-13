@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:translateX="21.6"
+        android:translateY="21.6">
+        <!-- Cricket Ball -->
+        <path
+            android:fillColor="#EF4444"
+            android:pathData="M54,14 A40,40 0 1,1 53.9,14 Z" />
+        <!-- Seam -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3"
+            android:pathData="M54,14 C65,30 65,78 54,94" />
+        <!-- Cricket Bat crossing -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M30,30 L40,20 L80,60 L70,70 Z" />
+        <path
+            android:fillColor="#D97706"
+            android:pathData="M70,70 L80,60 L88,68 L78,78 Z" />
+        <!-- Stumps -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M44,40 h4 v32 h-4 z M52,38 h4 v34 h-4 z M60,40 h4 v32 h-4 z" />
+    </group>
+</vector>
